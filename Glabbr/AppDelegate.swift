@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let value = UInt32(bigEndian: 1500)
+        
+        print(String(format:"%04X", value.bigEndian)) //05DC
+        print(String(format:"%04X", value.littleEndian)) //DC05
+        
+        print(String(format:"%i", value.littleEndian)) //DC05
         return true
     }
 

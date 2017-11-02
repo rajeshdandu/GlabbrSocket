@@ -16,7 +16,31 @@ class GlabbrStream {
     //Parameter: GlabberGateWay struct.
     func serialize(data:GlabbrGateWay) -> Data{
         
-        var fw = data
-        return Data(bytes: &fw, count: MemoryLayout<GlabbrGateWay>.stride)
+        let ary_bytes = NSMutableArray()
+        
+        
+        
+        var cuid = UInt32(littleEndian: UInt32(data.cuid))
+        let array = withUnsafeBytes(of: &cuid) { Array($0) }
+        ary_bytes.addObjects(from: array)
+        
+        var i = UInt32(littleEndian: UInt32(data.i))
+        let array_i = withUnsafeBytes(of: &i) { Array($0) }
+          ary_bytes.addObjects(from: array_i)
+        
+        var l = UInt64(littleEndian: UInt64(data.l))
+        let array_l = withUnsafeBytes(of: &l) { Array($0) }
+         ary_bytes.addObjects(from: array_l)
+        
+        
+        let s = [UInt8](data.s.utf8)
+          ary_bytes.addObjects(from: s)
+        
+        print(ary_bytes)
+        
+      let data = NSKeyedArchiver.archivedData(withRootObject: ary_bytes)
+        return data
+        
+  
     }
 }

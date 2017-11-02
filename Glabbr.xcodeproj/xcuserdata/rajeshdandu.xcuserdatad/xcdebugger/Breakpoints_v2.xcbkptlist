@@ -10,12 +10,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Glabbr/GlabbrServer.swift"
-            timestampString = "531224928.0784"
+            timestampString = "531318279.018251"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "setupNetworkCommunication()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Glabbr/GlabbrServer.swift"
+            timestampString = "531318644.080578"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "sendMessage(data:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Glabbr.GlabbrServer.sendMessage (data : Foundation.Data) -&gt; ()"
+                  moduleName = "Glabbr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajeshdandu/Desktop/Glabbr/Glabbr/GlabbrServer.swift"
+                  timestampString = "531328782.586801"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "130">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Glabbr.GlabbrServer.(sendMessage (data : Foundation.Data) -&gt; ()).(closure #1)"
+                  moduleName = "Glabbr"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rajeshdandu/Desktop/Glabbr/Glabbr/GlabbrServer.swift"
+                  timestampString = "531328782.587988"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Glabbr/ViewController.swift"
+            timestampString = "531328781.651423"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "setupNetworkCommunication()"
+            landmarkName = "sendMessagetoServer()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -50,6 +50,7 @@ class ViewController: UIViewController {
     func sendMessagetoServer(){
         let glabberGateWay = GlabbrGateWay(i: 10, l: 20, s: "Glabbr")
         let data =  glabbrStream.serialize(data: glabberGateWay)
+        
         glabbrServer.sendMessage(data: data)
     }
     

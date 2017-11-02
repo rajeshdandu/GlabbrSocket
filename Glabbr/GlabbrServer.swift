@@ -37,8 +37,12 @@ class GlabbrServer:NSObject {
                                            &readStream,
                                            &writeStream)
         
+      
         inputStream = readStream!.takeRetainedValue()
         outputStream = writeStream!.takeRetainedValue()
+        
+     //   inputStream.setProperty(StreamSocketSecurityLevel.tlSv1, forKey:Stream.PropertyKey(rawValue: Stream.PropertyKey.socketSecurityLevelKey.rawValue))
+      //  outputStream.setProperty(StreamSocketSecurityLevel.tlSv1, forKey: Stream.PropertyKey(rawValue: Stream.PropertyKey.socketSecurityLevelKey.rawValue))
         
         inputStream.delegate = self
         outputStream.delegate = self
